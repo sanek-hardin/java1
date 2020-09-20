@@ -1,4 +1,4 @@
-package ru.progwards.nik;
+package test.nik;
 
 public class Task2 {
     public static void printJava() {

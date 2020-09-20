@@ -1,4 +1,4 @@
-package ru.progwards.nik;
+package test.nik;
 
 public class Hello {
     static void Hello (){
