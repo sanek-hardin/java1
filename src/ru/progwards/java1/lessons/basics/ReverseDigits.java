@@ -9,7 +9,7 @@ public class ReverseDigits {
             number = number / 10;
         }
         System.out.println(reverse);
-        return 0;
+        return number;
     }
     public static void main(String[] args) {
         reverseDigits(123);
