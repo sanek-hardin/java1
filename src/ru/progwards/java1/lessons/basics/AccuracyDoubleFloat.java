@@ -17,7 +17,7 @@ public class AccuracyDoubleFloat {
     }
 
     public static void main(String[] args) {
-        calculateAccuracy();
+        //calculateAccuracy();
     }
 
 
