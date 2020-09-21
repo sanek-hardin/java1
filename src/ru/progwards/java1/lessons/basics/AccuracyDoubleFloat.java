@@ -12,12 +12,13 @@ public class AccuracyDoubleFloat {
         return radius;
     }
     public static double calculateAccuracy(double radius){
-
-        return radius;
+        double result = volumeBallDouble((float) radius) - volumeBallFloat((float) radius);
+        return result;
     }
+
     public static void main(String[] args) {
-        volumeBallDouble(1);
-        volumeBallFloat(1);
-
+        calculateAccuracy();
     }
+
+
 }
