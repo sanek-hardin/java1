@@ -3,23 +3,22 @@ package ru.progwards.java1.lessons.basics;
 public class AccuracyDoubleFloat {
     public static double volumeBallDouble(double radius){
         double n = 3.14;
-        double V = 4/3 * n * (radius*radius*radius);
+        double V = 4.0 * n * (radius*radius*radius)/3;
         System.out.println(V);
         return V;
     }
     public static float volumeBallFloat(float radius){
         float n = 3.14f;
-        float V = 4/3 * n * (radius*radius*radius);
-        return V;
+        float V1 = 4f * n * (radius*radius*radius)/3;
+        System.out.println(V1);
+        return V1;
     }
-    public static double calculateAccuracy(double radius){
-        double result = volumeBallDouble((float) radius) - volumeBallFloat((float) radius);
-        return result;
+   public static double calculateAccuracy(double radius){
+       return volumeBallDouble(6371.2) - volumeBallFloat((float) radius);
     }
 
     public static void main(String[] args) {
-        //calculateAccuracy();
+        calculateAccuracy( 6371.2 );
+
     }
-
-
 }
