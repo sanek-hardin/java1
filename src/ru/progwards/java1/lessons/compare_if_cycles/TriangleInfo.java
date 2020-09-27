@@ -7,18 +7,10 @@ public class TriangleInfo {
         return result;
     }
     public static boolean isRightTriangle(int a, int b, int c){
-        boolean result = false;
-        if ((c * c) == ((a * a) + (b * b))) {
-            System.out.println(true);
+        boolean result = ((c * c) == ((a * a) + (b * b))) && ((a * a) == ((b * b) + (c * c))) && ((b * b) == ((a * a) + (c * c)));{
+            System.out.println(result);
+            return result;
         }
-        if ((a * a) == ((b * b) + (c * c))) {
-            System.out.println(true);
-        }
-        if ((b * b) == ((a * a) + (c * c))) {
-            System.out.println(true);
-        }
-        System.out.println(result);
-        return result;
     }
     public static boolean isIsoscelesTriangle(int a, int b, int c){
         boolean result = false;
@@ -32,7 +24,7 @@ public class TriangleInfo {
             }
     public static void main(String[] args) {
         isTriangle(50, 10, 43);
-        isRightTriangle(4, 4, 6 );
+        isRightTriangle(3, 4, 5 );
         isIsoscelesTriangle(7, 7, 5);
 
     }
