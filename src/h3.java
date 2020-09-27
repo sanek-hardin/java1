@@ -7,7 +7,6 @@ public class h3 {
             reversenum = reversenum + num % 10;
             num = num / 10;
         }
-        System.out.println();
         System.out.println("реверс номер: " + reversenum);
 
     }
