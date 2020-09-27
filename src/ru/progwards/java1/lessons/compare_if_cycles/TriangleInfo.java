@@ -28,15 +28,15 @@ public class TriangleInfo {
         }
         else if (c == a){
             System.out.println(true); }
-        else if (a != b && b != c){
+        else if (a != b && b != c && c != a){
             System.out.println(false);
         }
         return result;
     }
     public static void main(String[] args) {
         isTriangle(50, 10, 43);
-        isRightTriangle(4, 5, 3 );
-        isIsoscelesTriangle(5, 2, 4);
+        isRightTriangle(4, 7, 7 );
+        isIsoscelesTriangle(3, 4, 5);
 
     }
 
