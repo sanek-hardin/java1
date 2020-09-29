@@ -8,8 +8,7 @@ public class TriangleInfo {
     }
     public static boolean isRightTriangle(int a, int b, int c){
         boolean result = false;
-        System.out.println(result);
-         if (c * c == (a * a + b * b)){
+        if (c * c == (a * a + b * b)){
             result = true;
          }else if (a * a == (c * c + b * b)){
              result = true;
@@ -22,15 +21,14 @@ public class TriangleInfo {
     public static boolean isIsoscelesTriangle(int a, int b, int c){
         boolean result = false;
         if (a == b && b == c){
-            System.out.println(true);
+            result = true;
              }
         else if (b == c){
-            System.out.println(true);
+            result = true;
         }
         else if (c == a){
-            System.out.println(true);
+            result = true;
         }
-
         return result;
     }
     public static void main(String[] args) {
