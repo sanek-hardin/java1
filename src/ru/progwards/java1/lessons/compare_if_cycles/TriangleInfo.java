@@ -23,6 +23,9 @@ public class TriangleInfo {
         if (a == b && b == c){
             result = true;
              }
+        if (a == b){
+            result = true;
+        }
         else if (b == c){
             result = true;
         }
