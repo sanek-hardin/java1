@@ -21,7 +21,7 @@ public class TriangleInfo {
 
     public static boolean isIsoscelesTriangle(int a, int b, int c){
         boolean result = false;
-        if (a == b){
+        if (a == b && b == c){
             System.out.println(true);
              }
         else if (b == c){
@@ -29,7 +29,8 @@ public class TriangleInfo {
         }
         else if (c == a){
             System.out.println(true);
-        } else {
+        }
+        else {
             System.out.println(false);
         }
         return result;
