@@ -28,8 +28,9 @@ public class TriangleInfo {
             System.out.println(true);
         }
         else if (c == a){
-            System.out.println(true); }
-        else if (a != b && b != c && c != a){
+            System.out.println(true);
+        }
+        else {
             System.out.println(false);
         }
         return result;
@@ -37,9 +38,7 @@ public class TriangleInfo {
     public static void main(String[] args) {
         isTriangle(50, 10, 43);
         isRightTriangle(3, 4, 5 );
-        //isIsoscelesTriangle(3, 5, 4);
-
+        isIsoscelesTriangle(3, 5, 5);
     }
-
     }
 
