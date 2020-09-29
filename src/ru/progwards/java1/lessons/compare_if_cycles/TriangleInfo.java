@@ -30,15 +30,13 @@ public class TriangleInfo {
         else if (c == a){
             System.out.println(true);
         }
-        else {
-            System.out.println(false);
-        }
+
         return result;
     }
     public static void main(String[] args) {
         isTriangle(50, 10, 43);
         isRightTriangle(3, 4, 5 );
-        isIsoscelesTriangle(5, 5, 5);
+        isIsoscelesTriangle(4, 2, 5);
     }
     }
 
