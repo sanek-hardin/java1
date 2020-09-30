@@ -12,6 +12,13 @@ public class h3 {
     }
 }
 
+//    int sum = 1;
+//    int previousNumber = 0;
+//    int nextNumber = 1;
+//        for (int i = 1; i < n; i++) {
+//        sum = previousNumber + nextNumber;
+//        previousNumber = nextNumber;
+//        nextNumber = sum;
 
 
 

@@ -2,11 +2,41 @@ package ru.progwards.java1.lessons.compare_if_cycles;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit){
-        boolean result = true;
-return true;
+        boolean result = false;
+        if (number == 0 && digit == 0) {
+            result = true;
+        }
+        return result;
     }
+//    public static int fiboNumber(int n){
+//        int sum = 1;
+//    }
+    public static boolean isGoldenTriangle(int a, int b, int c){
+        boolean result = false;
+        double n = 0;
+    if (a == b){
+        n = a / c;
+        System.out.println(n);
+        result = true;
+    }
+    else if (b == c){
+        n = b / a;
+        System.out.println(n);
+        result = true;
+    }
+    else if (c == a){
+        n = c / b;
+        System.out.println(n);
+        result = true;
+    }
+    else if (n >= 1.61703 && n <= 1.61903){
+        result = true;
+    }
+    return result;
+}
     public static void main(String[] args) {
         containsDigit(10, 10);
+        isGoldenTriangle(4, 5 ,5);
 // Класс CyclesGoldenFibo
 // 3.1 Реализовать функцию
 // public static boolean containsDigit(int number, int digit), которая будет возвращать true,
