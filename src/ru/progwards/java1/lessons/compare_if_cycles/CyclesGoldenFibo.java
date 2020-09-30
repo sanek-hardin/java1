@@ -12,8 +12,16 @@ public class CyclesGoldenFibo {
 // public static int fiboNumber(int n), которая будет возвращать n-ое число Фибоначчи
 // (нумерация начинается с 1, то есть при n = 3 должно вернуться число Фибоначчи 2, а при n = 10 число 55).
     public static int fiboNumber(int n){
-        n = 0;
-        return n;
+        int sum = 1;
+        int sum1 = 0;
+        int sum2 = 1;
+        for (int i = 1; i < n; ++i) {
+            sum = sum1 + sum2;
+            sum1 = sum2;
+            sum2 = sum;
+        }
+        return sum;
+
     }
     public static boolean isGoldenTriangle(int a, int b, int c){
         boolean result = false;
