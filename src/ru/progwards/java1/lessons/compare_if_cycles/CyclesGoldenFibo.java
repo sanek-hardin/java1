@@ -8,6 +8,9 @@ public class CyclesGoldenFibo {
         }
         return result;
     }
+    // 3.2 Реализовать, используя любой цикл, функцию
+// public static int fiboNumber(int n), которая будет возвращать n-ое число Фибоначчи
+// (нумерация начинается с 1, то есть при n = 3 должно вернуться число Фибоначчи 2, а при n = 10 число 55).
     public static int fiboNumber(int n){
         n = 0;
         return n;
@@ -18,18 +21,15 @@ public class CyclesGoldenFibo {
     if (a == b){
         n = a / c;
         System.out.println(n);
-        result = true;
-    }
+        }
     else if (b == c){
         n = b / a;
         System.out.println(n);
-        result = true;
-    }
+         }
     else if (c == a){
         n = c / b;
         System.out.println(n);
-        result = true;
-    }
+        }
     else if (n >= 1.61703 && n <= 1.61903){
         result = true;
     }
@@ -37,8 +37,9 @@ public class CyclesGoldenFibo {
 }
     public static void main(String[] args) {
         containsDigit(10, 10);
-        isGoldenTriangle(4, 5 ,5);
-// Класс CyclesGoldenFibo
+        isGoldenTriangle(34, 34 ,55);
+        fiboNumber(1235);
+        // Класс CyclesGoldenFibo
 // 3.1 Реализовать функцию
 // public static boolean containsDigit(int number, int digit), которая будет возвращать true,
 // если число number содержит цифру digit.
@@ -49,9 +50,7 @@ public class CyclesGoldenFibo {
 //  а каждый следующий равен сумме двух предыдущих.
 //  Для проведения этого исследования нам придётся решить две задачи.
 //
-// 3.2 Реализовать, используя любой цикл, функцию
-// public static int fiboNumber(int n), которая будет возвращать n-ое число Фибоначчи
-// (нумерация начинается с 1, то есть при n = 3 должно вернуться число Фибоначчи 2, а при n = 10 число 55).
+
 // 3.3 Реализовать функцию
 //public static boolean isGoldenTriangle(int a, int b, int c), которая будет возвращать true, если треугольник
 // со сторонами a, b, c является Золотым. Определим критерии. Он должен быть равнобедренным и отношение ребра
