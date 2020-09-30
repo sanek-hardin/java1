@@ -8,9 +8,10 @@ public class CyclesGoldenFibo {
         }
         return result;
     }
-//    public static int fiboNumber(int n){
-//        int sum = 1;
-//    }
+    public static int fiboNumber(int n){
+        n = 0;
+        return n;
+    }
     public static boolean isGoldenTriangle(int a, int b, int c){
         boolean result = false;
         double n = 0;
